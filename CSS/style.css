@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* -webkit-box-sizing: border-box; */
+} 
+a, a:hover{
+    text-decoration: none;
+}
+:root{ 
+    --white: #ffffff;
+    --black: #000000;
+    --text-color: #555555;
+    --main-color1: #A82C48;
+   
+}
+:active, :hover, :focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+.b{
+    border: 2px solid red;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    font-size: 100%;
+    font-weight: 400px;
+}
+p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+.mybutton1{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid var(--main-color1);
+    color: var(--main-color1);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, var(--main-color1) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    -webkit-transition: all 0.9s ease-out 0s;
+    -o-transition: all 0.9s ease-out 0s;
+    -moz-transition: all 0.9s ease-out 0s;
+    transition: all 0.9s ease-out 0s;
+}
+.mybutton2{
+    display: inline-block;
+    padding: 10px 30px;
+    line-height: 25px;
+    background-color: var(--main-color1);
+    border: 1px solid var(--main-color1);
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 18%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+}
+.mybutton1:hover{
+    color: var(--white);
+    background-position: left bottom;
+}
+.mybutton2:hover{
+    background-color: transparent;
+    color: var(--main-color1);
+}
+/* ====Header start==== */
+header{
+    background: var(--white);
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+.navbar-light .navbar-nav .nav-link  {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:hover  {
+    color: var(--main-color1);
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--main-color1);
+}
+/* ====Header end==== */
+/* ====Banner section start==== */
+.banner h3{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.banner h3 span{
+    color: var(--main-color1);
+}
+
+/* ====Banner section end==== */
+/* ====Counter div start==== */
+.counter-content{
+    background-color: var(--main-color1);
+    padding: 40px 0px;
+}
+.counter-content p{
+    color: var(--white);
+}
+.counter-content h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--white);
+}
+/* ====Counter div end==== */
+/* ====About section start==== */
+.about-content h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.7;
+    padding-bottom: 15px; 
+    color: var(--black); 
+    text-transform: capitalize;
+}
+.about-content .row2-content{
+    padding-top: 50px;
+}
+.about-content .row2-content ul li{
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--text-color);
+}
+.about-content .row2-content ul li i{
+    color: var(--main-color1);
+    padding-right: 5px;
+    font-size: 20px;
+}
+/* ====About section end==== */
+/* ====Offers section start==== */
+.our-offers h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 48px;
+    color: var(--main-color1);
+}
+.our-offers h6{
+    color: var(--text-color);
+    margin-top: 10px;
+    font-size: 16px;
+}
+.our-offers h3{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Quicksand',sans-serif;
+}
+
+.our-offers .card .card-body span{
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-color1);
+    margin-bottom: 15px;
+   
+}
+.our-offers .card .card-body span del{
+    color: var(--text-color);
+    margin-left: 15px;
+}
+.card-img{
+    overflow: hidden;
+}
+.our-offers .card .card-img img{
+   transition: all 1.2s ease;
+}
+.card-img:hover img{
+    transform: scale(1.2);
+ }
+/* ====Offers section end==== */
+/* ====Our Team section start==== */
+.our-team h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 48px;
+    color: var(--main-color1);
+}
+.our-team .team-img{
+    border: 2px solid var(--main-color1);
+}
+.our-team p{
+    font-weight: 500; 
+}
+/* ====Our Team section end==== */
+/* ====FAQ section start==== */
+.freq-ask-ques h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 48px;
+    color: var(--main-color1);
+}
+.accordion-button{
+    color: var(--text-color);
+    background-color: rgb(237, 229, 229); 
+    font-size: 18px;
+    border-bottom: 1px solid var(--text-color);
+}
+.my-custom-class .accordion-button:focus{
+    border-color: var(--text-color);
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    background-color: var(--main-color1);
+    color: var(--white);
+}
+.my-custom-class strong{
+    color: var(--text-color);
+}
+.my-custom-class strong a{
+    text-decoration: underline;
+}
+/* ====FAQ section end==== */
+/* ====Order Now section start==== */
+.myorder-now {
+    padding: 90px 0px 70px 0px;
+    /* background-color: var(--text-color); */
+    background-color: #333;
+    margin-top: 50px;
+}
+.myorder-now .myorder-now-body{
+    width: 70%;
+    margin: auto;
+}
+.myorder-now .myorder-now-body h1{
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 48px;
+    color: var(--main-color1);
+    font-family: 'Ubuntu',sans-serif;
+}
+.myorder-now form h6{
+    padding-top: 10px;
+}
+.myorder-now input{
+    width: 300px;
+    line-height: 42px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    border: 1px solid var(--main-color1);
+}
+.myorder-now input:hover{
+    background-color: #333;
+    color: var(--white);
+}
+/* ====Order Now Section end==== */
+/* ====Footer section start==== */
+.footer{
+   background-color: var(--black);
+   color: white;
+}
+.footer .input{
+    line-height: 45px;
+    width: 55%;
+    border: 2px solid var(--white);
+    color: var(--white);
+    background-color: var(--black);
+    outline: none;
+    margin-top: 20px;
+    margin-left: 120px;
+    font-weight: 600;
+}
+.footer::placeholder{
+    color: var(--white);
+}
+.footer h6{
+    font-size: 16px;
+    font-weight: 400;
+   color: var(--white);
+   line-height: 25px;
+}
+.footer span i{
+    font-size: 44px;
+    padding-right: 6px;
+    color: var(--white);
+    
+}
+.footer span i:hover{
+    color: var(--main-color1);  
+}
+.footer .color-maintain{
+    color: yellow;
+}
+/* ====Footer section start==== */
